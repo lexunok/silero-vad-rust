@@ -14,8 +14,9 @@ categories = ["multimedia::audio"]
 exclude = [".gitignore"]
 
 [features]
-default = ["audio-wav"]
+default = ["audio-wav", "ort-load-dynamic"]
 audio-wav = ["hound"]
+ort-load-dynamic = ["ort/load-dynamic"]
 
 [dependencies]
 # Safe bindings for ONNX Runtime 1.22
